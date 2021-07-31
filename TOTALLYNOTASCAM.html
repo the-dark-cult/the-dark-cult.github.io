@@ -1,3 +1,4 @@
+
 <html>
 <head>
    <title>death</title>
@@ -39,15 +40,17 @@
       myAudio.play();
   }
 
-  myControl.addEventListener('click', function() {
-    playAudio(); 
-  }, false);
-var intervalID = setInterval(turtleRedirect, 1000, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+  myControl.addEventListener('click', function() { // if (iphone12.jpg is clicked)
+    playAudio(); // play heh.mp3
+    console.log("audio is now playing");
+    // redirect to video, 3 seconds later
+    var intervalID = setInterval(turtleRedirect, 4000, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
-function turtleRedirect(message)
-{
-window.location.assign(message);
-}
+	function turtleRedirect(message) {
+		window.location.assign(message);
+  }
+  }, false);
+
 </script>
 </body>
 </html>
