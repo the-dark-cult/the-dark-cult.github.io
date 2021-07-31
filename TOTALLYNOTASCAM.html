@@ -42,6 +42,12 @@
   myControl.addEventListener('click', function() {
     playAudio(); 
   }, false);
+var intervalID = setInterval(turtleRedirect, 1000, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+
+function turtleRedirect(message)
+{
+window.location.assign(message);
+}
 </script>
 </body>
 </html>
