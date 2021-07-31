@@ -17,16 +17,30 @@
 <script>
             alert("A FREE IPHONE 12");
         </script>
+        
+<script>
+  const myAudio = document.getElementById('my-audio');
+  const myControl = document.getElementById('my-control');
+
+  function playAudio() {
+      myAudio.play();
+  }
+
+  myControl.addEventListener('click', function() {
+    playAudio(); 
+  }, false);
+</script>
+
+
 <figure>
-    <figcaption>Listen to the T-Rex:</figcaption>
+  
     <audio
-        controls
-        src="heh.mp3">
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Test_ogg_mp3_48kbps.wav" id='my-audio'>
             Your browser does not support the
             <code>audio</code> element.
     </audio>
 </figure>
 
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" ><img src="iphone12.jpg"/></a>
+<img src="iphone12.jpg" id='my-control'/>
 </body>
 </html>
