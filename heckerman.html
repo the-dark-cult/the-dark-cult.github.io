@@ -1,0 +1,37 @@
+<html>	
+
+  <head>
+    <title>DON"T TYPE IN 5</title>
+    <script>
+      function testNum(x) {
+        let result;
+
+        if (x == 5839) {
+          result = 'FOOL';
+window.location.assign("bean.html");
+        } else {
+          result = 'incorrect password';
+        }
+
+        return result;
+      }
+      
+      function myFunctionSum() {
+        var number1 = document.getElementById("monkey").value;
+        result = testNum(number1);
+        alert(result);
+      }
+
+      console.log(testNum(6));
+
+    </script>
+  </head>
+
+  <body>
+    <h1>GUESS THE PASSWORD</h1>
+    Input the first number<br>
+    <input type="password" id="monkey"><br>
+    <button onclick="myFunctionSum()"> Show alert! </button>
+  </body>
+
+</html>
